@@ -1,0 +1,28 @@
+/* Apply in-line CSS to change colors of certain text portion, bold, underline and italics
+certain words in your HTML web page. Also change background color of each paragraph
+using in-line CSS  */
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+}
+#container .para1{
+    color: aliceblue;
+    background-color: blue;
+}
+#container .para2{
+    text-decoration: underline;
+    font-style: italic;
+    background-color: aquamarine;
+}
+#container .para3{
+    background-color: azure;
+    color: black;
+}
+#container .para4{
+    background-color: tomato;
+    color: rgb(109, 109, 194);
+}

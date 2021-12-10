@@ -1,0 +1,69 @@
+<!-- (h) Write a JavaScript program to dynamically bold, italic and underline words and phrases 
+based on user actions. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <p id="TextArea">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium dolore obcaecati ut aliquam veritatis
+            vitae dicta a. Numquam deleniti rerum in ipsam quis odio ducimus?
+        </p>
+        <p id="TextArea2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, dolorem, a debitis laborum expedita facilis
+            voluptatem minus magni dolore nostrum veniam molestias quisquam reiciendis corporis nisi architecto ullam
+            dolor iste.
+        </p>
+        <p id="TextArea3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque modi explicabo, necessitatibus, excepturi
+            possimus dolorem nobis, nostrum natus dignissimos nam tenetur maiores ducimus nihil laborum doloremque
+            assumenda! Facere, enim culpa quod aliquid officia atque ipsam nostrum. Fugiat inventore amet vitae?
+        </p>
+    </div>
+
+</body>
+<script>
+    function boldText() {
+        var target = document.getElementById("TextArea");
+        if (target.style.fontWeight.innerHtml == "bolder") {
+            target.style.fontWeight = "normal";
+        } else {
+            target.style.fontWeight = "bolder";
+        }
+    }
+
+
+
+    function italicText() {
+        var target = document.getElementById("TextArea2");
+        if (target.style.fontStyle == "italic") {
+            target.style.fontStyle = "normal";
+        } else {
+            target.style.fontStyle = "italic";
+        }
+    }
+
+    function underlineText() {
+        var target = document.getElementById("TextArea3");
+        if (target.style.textDecoration == "underline") {
+            target.style.textDecoration = "none";
+        } else {
+            target.style.textDecoration = "underline";
+        }
+
+    }
+    document.getElementsByName("TextArea").innerHtml = boldText();
+    document.getElementsByName("TextArea2").innerHtml = italicText();
+    document.getElementsByName("TextArea3").innerHtml = underlineText();
+
+</script>
+
+</html>
